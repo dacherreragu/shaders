@@ -274,10 +274,57 @@ V:
 
 ## Raster approach: shading
 
-<!– 
-Desarrollar el tema que se encuentra aca (en slides verticales, i.e., empleando el tag 'V:'):
-https://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation/rasterization-stage
-–>
+<section>
+
+<section>
+
+# SHADING
+
+</section>
+
+<section>
+
+## WHY IS SHADING BETTER FOR SHADING?
+
+*   Shading is used to create effects like shadows, soft shadows when area lights are used, and more generally global illumunation effects such as reflection, refraction, indirect reflections and indirect diffuse.
+*   Ray-tracing is good at both solving the visibility problem and finding the visibility between surfaces.
+*   The shading process requires finding the visibility between surfaces.
+
+</section>
+
+<section>
+
+## SO... WHY DO GPUs USE RASTRERIZATION OVER RAY TRACING?
+
+![](images/3.png)</section>
+
+<section>
+
+## CREATE AN IMAGE IN RAY-TRACING
+
+*   Cast a ray for each pixel in the image.
+*   The first rays emitted are called primary rays or camera rays.
+*   More rays can be spawned from primary rays. These other rays are called secondary rays.
+*   When a primary ray is cast into the scene, the next step is to find if it intersects any object in the scene.
+*   When primary rays are used to solve the visibility problem, we can use the term ray-casting.
+
+</section>
+
+<section>
+
+## HOW DOES SHADING WORK ON RAY-TRACING?
+
+There are 2 main types of rays, Primary rays and secondary rays, Secondary rays can be Shadow Rays or reflection rays depending on their function.
+
+</section>
+
+<section>
+
+## HOW DOES SHADING WORK ON RAY-TRACING?
+
+![](images/4.png) ![](images/5.png)</section>
+
+</section>
 
 H:
 
